@@ -108,11 +108,10 @@ export default function Sidebar() {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all ${
-                active
+              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all ${active
                   ? 'text-white shadow-md'
                   : 'text-gray-700'
-              }`}
+                }`}
               style={active ? { backgroundColor: '#534FEB' } : {}}
               onMouseEnter={(e) => {
                 if (!active) {
@@ -168,7 +167,7 @@ export default function Sidebar() {
             />
           </svg>
         </div>
-        <button 
+        <button
           className="w-full text-white py-3 px-4 rounded-lg font-semibold transition-colors shadow-md"
           style={{ backgroundColor: '#534FEB' }}
           onMouseEnter={(e) => {
@@ -184,7 +183,7 @@ export default function Sidebar() {
 
       {/* Logout */}
       <div className="px-4 pb-6">
-        <button 
+        <button
           className="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 w-full transition-colors"
           onMouseEnter={(e) => {
             e.currentTarget.style.backgroundColor = 'rgba(83, 79, 235, 0.1)';
